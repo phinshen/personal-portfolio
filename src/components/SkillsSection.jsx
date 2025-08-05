@@ -1,12 +1,20 @@
 import { Code } from "lucide-react";
+import { Database } from "lucide-react";
+import { Server } from "lucide-react";
+import tailwindLogo from "../assets/tailwind-logo.svg";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faHtml5 } from "@fortawesome/free-brands-svg-icons";
+import { faCss3Alt } from "@fortawesome/free-brands-svg-icons";
+import { faBootstrap } from "@fortawesome/free-brands-svg-icons";
+import { faJsSquare } from "@fortawesome/free-brands-svg-icons";
+import { faReact } from "@fortawesome/free-brands-svg-icons";
+import { faNodeJs } from "@fortawesome/free-brands-svg-icons";
+import { faServer } from "@fortawesome/free-solid-svg-icons";
 
 export default function SkillsSection() {
-  const iconClass = "h-6 w-6 text-gray-700";
   const skills = [
     {
-      name: "HTML5",
+      name: "HTML",
       icon: (
         <FontAwesomeIcon
           icon={faHtml5}
@@ -15,14 +23,78 @@ export default function SkillsSection() {
         />
       ),
     },
-    { name: "CSS3", icon: <Code /> },
-    { name: "React", icon: <Code /> },
-    { name: "React", icon: <Code /> },
-    { name: "React", icon: <Code /> },
-    { name: "React", icon: <Code /> },
-    { name: "React", icon: <Code /> },
-    { name: "React", icon: <Code /> },
-    { name: "React", icon: <Code /> },
+    {
+      name: "CSS",
+      icon: (
+        <FontAwesomeIcon
+          icon={faCss3Alt}
+          size="2xl"
+          style={{ color: "#264DE4" }}
+        />
+      ),
+    },
+    {
+      name: "Bootstrap",
+      icon: (
+        <FontAwesomeIcon
+          icon={faBootstrap}
+          size="2xl"
+          style={{ color: "#7952B3" }}
+        />
+      ),
+    },
+    {
+      name: "Tailwind CSS",
+      icon: <img src={tailwindLogo} alt="Tailwind CSS" className="h-8 w-8" />,
+    },
+    {
+      name: "JavaScript",
+      icon: (
+        <FontAwesomeIcon
+          icon={faJsSquare}
+          size="2xl"
+          style={{ color: "#f7df1e" }}
+        />
+      ),
+    },
+    {
+      name: "React",
+      icon: (
+        <FontAwesomeIcon
+          icon={faReact}
+          size="2xl"
+          style={{ color: "#61DAFB" }}
+        />
+      ),
+    },
+    {
+      name: "Node.js",
+      icon: (
+        <FontAwesomeIcon
+          icon={faNodeJs}
+          size="2xl"
+          style={{ color: "#339933" }}
+        />
+      ),
+    },
+    {
+      name: "Express.js",
+      icon: (
+        <FontAwesomeIcon
+          icon={faServer}
+          size="2xl"
+          style={{ color: "#000000" }}
+        />
+      ),
+    },
+    {
+      name: "PostgreSQL",
+      icon: <Database className="h-6 w-6 text-blue-600" />,
+    },
+    {
+      name: "NoSQL",
+      icon: <Server className="h-6 w-6 text-green-600" />,
+    },
   ];
 
   return (
