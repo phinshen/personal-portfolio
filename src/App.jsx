@@ -1,4 +1,5 @@
 import HeroSection from "./components/HeroSection";
+import ProjectSection from "./components/ProjectSection";
 import SkillsSection from "./components/SkillsSection";
 
 export default function App() {
@@ -6,6 +7,7 @@ export default function App() {
     <div>
       <HeroSection />
       <SkillsSection />
+      <ProjectSection />
     </div>
   );
 }
