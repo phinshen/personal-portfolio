@@ -12,16 +12,16 @@ export default function ProjectSection() {
       githubLink: "#",
     },
     {
-      id: 1,
+      id: 2,
       title: "E-commer Store",
       description:
         "A Full stack e-commerce platform with user authentication, product listings, and a shopping cart.",
-      image: "#",
+      image: "/placeholder.svg",
       liveLink: "#",
       githubLink: "#",
     },
     {
-      id: 1,
+      id: 3,
       title: "E-commer Store",
       description:
         "A Full stack e-commerce platform with user authentication, product listings, and a shopping cart.",
