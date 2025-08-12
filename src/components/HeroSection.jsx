@@ -1,5 +1,6 @@
 import { Download, Mail } from "lucide-react";
 import ProfilePic from "../assets/profilePic.jpeg";
+import resume from "../assets/ChinPhinShen-Resume.pdf";
 
 export default function HeroSection() {
   return (
@@ -21,20 +22,26 @@ export default function HeroSection() {
 
       {/* Description */}
       <p className="text-lg md:text-xl text-gray-600 max-w-2xl mb-8">
-        I'm a passionate Software Developer with a focus on creating clean,
-        efficient, and user-friendly web experiences. Welcome to my portfolio!
+        I'm a recent coding bootcamp graduate transitioning from an accounting
+        career into software development. Passionate about learning and building
+        clean, efficient web applications, I’m excited to contribute to
+        innovative tech projects.
       </p>
 
       {/* Button */}
       <div className="flex flex-col sm:flex-row gap-4">
         {/* Download Resume Button */}
-        <button className="flex items-center justify-center px-6 py-3 bg-gray-900 text-white rounded-lg hover:bg-gray-700 text-lg font-semibold">
+        <a
+          href={resume}
+          download
+          className="flex items-center justify-center px-6 py-3 bg-gray-900 text-white rounded-lg hover:bg-gray-700 text-lg font-semibold"
+        >
           <Download className="mr-2 h-5 w-5" /> Download Resume
-        </button>
+        </a>
 
         {/* Contact Me */}
         <a
-          href="#contact"
+          href="mailto:iampx95@gmail.com"
           className="flex items-center justify-center px-6 py-3 border border-gray-300 text-gray-900 rounded-lg hover:bg-gray-100 text-lg font-semibold"
         >
           <Mail className="mr-2 h-5 w-5" /> Contact Me

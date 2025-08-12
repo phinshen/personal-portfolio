@@ -1,24 +1,25 @@
 import { ExternalLink, Github } from "lucide-react";
+import EventRecipe from "../assets/EventRecipeDemo.mp4";
 
 export default function ProjectSection() {
   const projects = [
     {
       id: 1,
-      title: "E-commer Store",
+      title: "EventRecipe",
       description:
-        "A Full stack e-commerce platform with user authentication, product listings, and a shopping cart.",
-      image: "#",
-      liveLink: "#",
-      githubLink: "#",
+        "A recipe organization platform enabling users to discover thousands of recipes from TheMealDB API and organize them into custom events for dinner parties, holidays, and special occasions.",
+      video: EventRecipe,
+      liveLink: "https://event-recipe.vercel.app/",
+      githubLink: "https://github.com/phinshen/event-recipe",
     },
     {
       id: 2,
-      title: "E-commer Store",
+      title: "T.Px Hair Studio",
       description:
-        "A Full stack e-commerce platform with user authentication, product listings, and a shopping cart.",
-      image: "/placeholder.svg",
-      liveLink: "#",
-      githubLink: "#",
+        "A booking system for a hair studio using React and backend API integration, enabling customers to schedule appointments through the application.",
+      video: "#",
+      liveLink: "https://tpx-hairstudio-bookingsystem.vercel.app/",
+      githubLink: "https://github.com/phinshen/tpx-hairstudio-bookingsystem",
     },
     {
       id: 3,
@@ -42,11 +43,15 @@ export default function ProjectSection() {
             key={project.id}
             className="flex flex-col h-full bg-white rounded-lg shadow-md overflow-hidden"
           >
-            <div className="h-48 overflow-hidden">
-              <img
-                src={project.image}
-                alt={project.title}
+            <div className="h-80 overflow-hidden">
+              <video
+                src={project.video}
                 className="object-cover w-full h-full"
+                autoPlay
+                loop
+                muted
+                playsInline
+                controls={false}
               />
             </div>
             <div className="flex-1 p-6">
@@ -66,7 +71,7 @@ export default function ProjectSection() {
                 </button>
               </a>
               <a
-                href={project.liveLink}
+                href={project.githubLink}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-full sm:w-auto"
