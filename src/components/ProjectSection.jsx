@@ -1,6 +1,7 @@
 import { ExternalLink, Github } from "lucide-react";
 import EventRecipe from "../assets/EventRecipeDemo.mp4";
 import HairStudio from "../assets/HairStudioDemo.mp4";
+import TripPros from "../assets/TripProsDemo.mp4";
 
 export default function ProjectSection() {
   const projects = [
@@ -21,6 +22,15 @@ export default function ProjectSection() {
       video: HairStudio,
       liveLink: "https://tpx-hairstudio-bookingsystem.vercel.app/",
       githubLink: "https://github.com/phinshen/tpx-hairstudio-bookingsystem",
+    },
+    {
+      id: 3,
+      title: "TripPros",
+      description:
+        "A travel-themed organizer application with CRUD operations to manage trips, documents and bookings.",
+      video: TripPros,
+      liveLink: "https://trippros.vercel.app/",
+      githubLink: "https://github.com/phinshen/todo-travel",
     },
   ];
 
