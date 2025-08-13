@@ -1,5 +1,6 @@
 import { ExternalLink, Github } from "lucide-react";
 import EventRecipe from "../assets/EventRecipeDemo.mp4";
+import HairStudio from "../assets/HairStudioDemo.mp4";
 
 export default function ProjectSection() {
   const projects = [
@@ -14,26 +15,17 @@ export default function ProjectSection() {
     },
     {
       id: 2,
-      title: "T.Px Hair Studio",
+      title: "TP. One Hair Studio",
       description:
         "A booking system for a hair studio using React and backend API integration, enabling customers to schedule appointments through the application.",
-      video: "#",
+      video: HairStudio,
       liveLink: "https://tpx-hairstudio-bookingsystem.vercel.app/",
       githubLink: "https://github.com/phinshen/tpx-hairstudio-bookingsystem",
-    },
-    {
-      id: 3,
-      title: "E-commer Store",
-      description:
-        "A Full stack e-commerce platform with user authentication, product listings, and a shopping cart.",
-      image: "#",
-      liveLink: "#",
-      githubLink: "#",
     },
   ];
 
   return (
-    <section id="project" className="container mx-auto py-16 px-4 md: px-6">
+    <section id="project" className="container mx-auto py-16 px-4 md:px-6">
       <h2 className="text-3xl md:text-4xl font-bold text-center mb-10">
         My Projects
       </h2>
