@@ -1,7 +1,7 @@
 import { ExternalLink, Github } from "lucide-react";
 import EventRecipe from "../assets/EventRecipeDemo.mp4";
 import HairStudio from "../assets/HairStudioDemo.mp4";
-import TripPros from "../assets/TripProsDemo.mp4";
+import MovieBuzz from "../assets/MovieBuzzDemo.mp4";
 
 export default function ProjectSection() {
   const projects = [
@@ -25,12 +25,12 @@ export default function ProjectSection() {
     },
     {
       id: 3,
-      title: "TripPros",
+      title: "MovieBuzz",
       description:
-        "A travel-themed organizer application with CRUD operations to manage trips, documents and bookings.",
-      video: TripPros,
-      liveLink: "https://trippros.vercel.app/",
-      githubLink: "https://github.com/phinshen/todo-travel",
+        "A responsive movie discovery web app enabling users to search films and view trending titles using a NoSQL backend (Appwrite) and The Movie Database (TMDB) API.",
+      video: MovieBuzz,
+      liveLink: "https://movie-buzz-puce.vercel.app/",
+      githubLink: "https://github.com/phinshen/movie-app",
     },
   ];
 
